@@ -70,6 +70,10 @@ const dataModel = new mongoose.Schema({
         type: Number,
         default: 0,
     },
+    paste :{
+        type: Number,
+        default: 0,
+    }
 
 });
 
