@@ -6,7 +6,15 @@ const dataRoutes  = require('./Routes/dataRoutes')
 app.use(cors());
 const port = 8000;
 
-app.use(cors());
+const cors = require("cors");
+
+const corsOptions = {
+  origin: "http://localhost:3000", // Allow requests from your frontend
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // Allow these HTTP methods
+  allowedHeaders: "Content-Type, Authorization", // Allow these headers
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 mongoose
