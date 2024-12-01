@@ -4,7 +4,7 @@ const Data = require("../Models/dataSchema");
 
 router.post('/data',async(req,res)=>{
     try {
-        const {screenResolution,mouseSpeed,mouseAngle,mouseTremors,mouseJitters,xVariance,yVariance,totalVariance,keyHoldDuration,keyHoldStd,clickIntervalAvg,scrollSpeedAvg,keyStrokeInterval,avgTimeSpentField,averageTimeInterval,backspaceCount,repeatedKeyCount,averageTimeSpent,useragent,referrer,plugins} = req.body;
+        const {mouseSpeed,mouseAngle,mouseTremors,mouseJitters,xVariance,yVariance,totalVariance,keyHoldDuration,keyHoldStd,clickIntervalAvg,scrollSpeedAvg,keyStrokeInterval,avgTimeSpentField,averageTimeInterval,backspaceCount,repeatedKeyCount,averageTimeSpent,useragent,referrer,plugins} = req.body;
         console.log(req.body);
         const newData = new Data(req.body);
         console.log(newData);

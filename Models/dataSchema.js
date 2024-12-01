@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
 const ResolutionSchema = require("./resolutionModel")
 const dataModel = new mongoose.Schema({
-    screenResolution: {
-        type: ResolutionSchema,
-        default: {}
-    },
+
     mouseSpeed: {
         type: Number, 
         default: 0,
@@ -73,18 +70,7 @@ const dataModel = new mongoose.Schema({
         type: Number,
         default: 0,
     },
-    useragent: {
-        type: String,
-        default: ""
-    },
-    referrer: {
-        type: String,
-        default: ""
-    },
-    plugins: {
-        type: Number,
-        default: 0,
-    },
+
 });
 
-module.exports = mongoose.model("BotData", dataModel);
+module.exports = mongoose.model("humanData", dataModel);

@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect("mongodb://localhost:27017/HumanData")
+  .connect("mongodb+srv://Gowtham:gowtham@bill.fx5nzqb.mongodb.net/?retryWrites=true&w=majority&appName=bill")
   .then(() => {
     console.log("Server Connected");
   })
