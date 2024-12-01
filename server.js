@@ -11,7 +11,7 @@ const frontendOrigin = process.env.FRONTEND_ORIGIN;
 
 
 const corsOptions = {
-  origin: frontendOrigin, // Allow requests from your frontend
+  origin: ["https://famous-phoenix-ff4e15.netlify.app","http://localhost:3000"], // Allow requests from your frontend
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // Allow these HTTP methods
   allowedHeaders: "Content-Type, Authorization", // Allow these headers
 };
