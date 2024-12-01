@@ -3,10 +3,10 @@ const cors = require("cors");
 const app = express();
 const mongoose = require('mongoose');
 const dataRoutes  = require('./Routes/dataRoutes')
-app.use(cors());
+
 const port = 8000;
 
-const cors = require("cors");
+
 
 const corsOptions = {
   origin: "http://localhost:3000", // Allow requests from your frontend
