@@ -77,4 +77,4 @@ const dataModel = new mongoose.Schema({
 
 });
 
-module.exports = mongoose.model("humanData", dataModel);
+module.exports = mongoose.model("humanData1", dataModel);
