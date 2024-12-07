@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Data = require("../Models/reinforcementSchema");
+const ReinforcementData = require("../Models/reinforcementSchema");
 
 router.post('/reinforcement-data', async (req, res) => {
     try {
