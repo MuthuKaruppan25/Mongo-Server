@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const dataModel = new mongoose.Schema({
+
+const botdataModel = new mongoose.Schema({
 
     mouseSpeed: {
         type: Number, 
@@ -76,4 +77,4 @@ const dataModel = new mongoose.Schema({
 
 });
 
-module.exports = mongoose.model("humanData1", dataModel);
+module.exports = mongoose.model("botData", botdataModel);

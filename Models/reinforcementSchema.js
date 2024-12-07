@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
-const dataModel = new mongoose.Schema({
+const mongoose  = require('mongoose');
 
+const reinforcementSchema = new mongoose.Schema({
     mouseSpeed: {
         type: Number, 
         default: 0,
@@ -69,11 +69,8 @@ const dataModel = new mongoose.Schema({
         type: Number,
         default: 0,
     },
-    paste :{
-        type: Number,
-        default: 0,
-    }
 
-});
+})
 
-module.exports = mongoose.model("humanData1", dataModel);
+
+module.exports = mongoose.model("ReinforcementData", reinforcementSchema);

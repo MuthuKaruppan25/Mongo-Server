@@ -3,6 +3,7 @@ const cors = require("cors");
 const app = express();
 require("dotenv").config(); 
 const mongoose = require('mongoose');
+const reinforcementRoutes = require('./Routes/reinforcementData')
 const dataRoutes  = require('./Routes/dataRoutes')
 const port = process.env.PORT || 4000; 
 const mongoURI = process.env.MONGO_URI; 
@@ -26,5 +27,7 @@ mongoose
   });
  
 app.use('/users',dataRoutes);
+app.use('/api',reinforcementRoutes);
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
