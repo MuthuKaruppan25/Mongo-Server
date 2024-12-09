@@ -77,4 +77,4 @@ const botdataModel = new mongoose.Schema({
 
 });
 
-module.exports = mongoose.model("botData2", botdataModel);
+module.exports = mongoose.model("botData3", botdataModel);
