@@ -73,4 +73,4 @@ const reinforcementSchema = new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model("ReinforcementData", reinforcementSchema);
+module.exports = mongoose.model("ReinforcementHumanData", reinforcementSchema);
